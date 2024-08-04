@@ -1,12 +1,13 @@
-# HelloWorld Smart Contract
+# LalapRev Smart Contract
 
 ## Overview
-This project demonstrates the use of `require()`, `assert()`, and `revert()` statements in a smart contract. The contract allows users to set a value, check the value, and reset the value (only by the owner).
+
+The **LalapRev** smart contract is a simple Solidity contract designed to demonstrate the use of error handling mechanisms such as `require`, `revert`, and `assert`. The contract includes three functions (`req`, `rev`, and `ass`) that modify the state variable `totalSupply` based on certain conditions.
 
 ## Functionality
-- `setValue(uint _value)`: Sets the value. Uses `require()` to ensure the value is greater than zero.
-- `checkValue()`: Checks the value. Uses `assert()` to ensure the value is greater than zero.
-- `resetValue()`: Resets the value to zero. Uses `revert()` to ensure only the owner can reset the value.
+- `req(uint integer) public`: Adds the input integer to totalSupply if integer is greater than one.
+- `rev(uint integer) public`: Adds the input integer to totalSupply if integer is greater than one.
+- `ass(uint integer) public`: Adds the input integer to totalSupply if integer is greater than one.
 
 ## Instructions
 1. Clone the repository.
@@ -15,5 +16,5 @@ This project demonstrates the use of `require()`, `assert()`, and `revert()` sta
 4. Migrate the contracts: `truffle migrate`
 5. Run tests: `truffle test`
 
-## Video Walk-Through
-[Link to your Loom video]
+## Author
+Kim Emmanuelle Lalap
